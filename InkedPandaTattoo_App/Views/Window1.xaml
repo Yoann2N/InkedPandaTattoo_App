@@ -1,0 +1,77 @@
+﻿<Window x:Class="InkedPandaTattoo_App.Views.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InkedPandaTattoo_App.Views"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                       Text="Créer un artiste"
+                       FontSize="20" FontWeight="Bold"
+                       Margin="0,0,0,12"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Profession" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="1" Grid.Column="1" x:Name="ProfessionBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Style" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="2" Grid.Column="1" x:Name="StyleBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Pseudo" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="3" Grid.Column="1" x:Name="PseudoBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Bio" VerticalAlignment="Top" Margin="0,6,0,0"/>
+        <TextBox   Grid.Row="4" Grid.Column="1" x:Name="BioBox" Margin="0,6,0,6"
+                       Height="90" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Instagram" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="5" Grid.Column="1" x:Name="InstagramBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Facebook" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="6" Grid.Column="1" x:Name="FacebookBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Bannière URL" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="7" Grid.Column="1" x:Name="BanniereUrlBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="Vignette URL" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="8" Grid.Column="1" x:Name="VignetteUrlBox" Margin="0,6,0,6"/>
+
+        <TextBlock Grid.Row="9" Grid.Column="0" Text="CSS" VerticalAlignment="Top" Margin="0,6,0,0"/>
+        <TextBox   Grid.Row="9" Grid.Column="1" x:Name="CssBox" Margin="0,6,0,6"
+                       Height="110" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <TextBlock Grid.Row="10" Grid.Column="0" Text="UserId" VerticalAlignment="Center"/>
+        <TextBox   Grid.Row="10" Grid.Column="1" x:Name="UserIdBox" Margin="0,6,0,6"/>
+
+        <StackPanel Grid.Row="11" Grid.ColumnSpan="2"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,14,0,0">
+            <Button Content="Annuler" Width="100" Margin="0,0,10,0" Click="Cancel_Click"/>
+            <Button Content="Créer" Width="100" Click="Create_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
