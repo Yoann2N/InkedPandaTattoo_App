@@ -8,7 +8,7 @@ namespace InkedPandaTattoo_App.Models
 
     public class Artiste
     {
-        public long Id { get; set; }
+        public long Id { get; }
 
         public string Profession { get; set; } = string.Empty;
         public string Style { get; set; } = string.Empty;

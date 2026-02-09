@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace InkedPandaTattoo_App.Views
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour MakeRealisationView.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class MakeRealisationView : Window
     {
-        public Window1()
+        public MakeRealisationView()
         {
             InitializeComponent();
         }
