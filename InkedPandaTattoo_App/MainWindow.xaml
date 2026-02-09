@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow"  Width="800">
     <Grid>
-        <views:MakeArtisteView/>
+        <views:ArtisteListingView/>
     </Grid>
 </Window>

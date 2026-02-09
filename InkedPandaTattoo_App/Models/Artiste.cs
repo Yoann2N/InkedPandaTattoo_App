@@ -28,6 +28,12 @@ namespace InkedPandaTattoo_App.Models
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
         public long UserId { get; set; }
+
+        public Artiste() { }
+        public Artiste(string pseudo)
+        {
+            Pseudo = pseudo;
+        }
     }
 
 }

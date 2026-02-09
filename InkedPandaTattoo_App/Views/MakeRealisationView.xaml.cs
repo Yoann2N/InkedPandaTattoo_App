@@ -15,7 +15,7 @@ namespace InkedPandaTattoo_App.Views
     /// <summary>
     /// Logique d'interaction pour MakeRealisationView.xaml
     /// </summary>
-    public partial class MakeRealisationView : Window
+    public partial class MakeRealisationView : UserControl
     {
         public MakeRealisationView()
         {
