@@ -20,7 +20,7 @@ namespace InkedPandaTattoo_App
     {
         public MainWindow()
         {
-            DataContext = new ArtisteListingViewModelNoDB(); 
+            DataContext = new ArtisteListingViewModel(); 
             
                 
             InitializeComponent();
