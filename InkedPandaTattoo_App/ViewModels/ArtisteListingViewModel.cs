@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using InkedPandaTattoo_App.Models;
-using System.Windows;
-using System.ComponentModel;
-using System.Security.Cryptography.X509Certificates;
-using System.Collections.ObjectModel;
+﻿using InkedPandaTattoo_App.Models;
 using InkedPandaTattoo_App.Service;
-using InkedPandaTattoo_App.Models;
+using InkedPandaTattoo_App.Commands;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Windows;
 using System.Windows.Input;
-using mvvmDemo.Commands;
 
 namespace InkedPandaTattoo_App.ViewModels
 {
@@ -26,6 +21,7 @@ namespace InkedPandaTattoo_App.ViewModels
         public ArtisteListingViewModel()
         {
             LoadCommand = new RelayCommand(async _ => await LoadArtistes());
+            AddCommand = new RelayCommand(async _ => await LoadArtistes());
 
             _ = LoadArtistes();
         }
@@ -33,9 +29,12 @@ namespace InkedPandaTattoo_App.ViewModels
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
-       
 
-    private async Task LoadArtistes()
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        private async Task LoadArtistes()
         {
             try
             {
@@ -52,5 +51,11 @@ namespace InkedPandaTattoo_App.ViewModels
                 MessageBox.Show($"Error loading artistes: {ex.Message}");
             }
         }
+
+
+        private async Task AddArtistes()
+        { 
+        }
+
     }
 }

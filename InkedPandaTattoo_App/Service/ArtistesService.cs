@@ -25,7 +25,7 @@ namespace InkedPandaTattoo_App.Service
             response.EnsureSuccessStatusCode();
 
             var artistes = await response.Content.ReadFromJsonAsync<List<Artiste>>();
-            return artistes; 
+            return artistes ?? new List<Artiste>();
         }
     }
 }

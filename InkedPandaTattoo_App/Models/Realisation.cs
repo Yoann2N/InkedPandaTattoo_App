@@ -9,10 +9,10 @@ namespace InkedPandaTattoo_App.Models
         public int Id { get; set; }
 
         public string Titre { get; set; }
-        public string Description { get; }
-        public string description { get; set; }
+        public string? Description { get; set; }
+        
 
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
         public Realisation(int id, string titre, string description, string imageUrl)
         {
@@ -24,7 +24,9 @@ namespace InkedPandaTattoo_App.Models
 
         public Realisation() 
         {
-           Titre = "";
+           Titre = string.Empty;
+           
+
         }
     }
 }

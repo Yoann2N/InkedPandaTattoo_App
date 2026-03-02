@@ -24,6 +24,8 @@ namespace InkedPandaTattoo_App
             
                 
             InitializeComponent();
+
+            
         }
     }
 }
