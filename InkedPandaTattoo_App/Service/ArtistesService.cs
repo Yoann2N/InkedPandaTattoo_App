@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using InkedPandaTattoo_App.Models;
 
@@ -15,7 +16,7 @@ namespace InkedPandaTattoo_App.Service
             //_httpClient = new HttpClient{ BaseAddress = new Uri("http://127.0.0.1:8000/api/artistes/")};
 
             _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("http://127.0.0.1:8000/api/artistes/");
+            //_httpClient.BaseAddress = new Uri("http://127.0.0.1:8000/api/artistes/");
         }
 
         public async Task<List<Artiste>> GetArtistes()

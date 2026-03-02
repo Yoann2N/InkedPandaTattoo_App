@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using InkedPandaTattoo_App.ViewModels;
+using InkedPandaTattoo_App.Service;
 
 namespace InkedPandaTattoo_App
 {
@@ -20,6 +21,8 @@ namespace InkedPandaTattoo_App
         public MainWindow()
         {
             DataContext = new ArtisteListingViewModelNoDB(); 
+            
+                
             InitializeComponent();
         }
     }
