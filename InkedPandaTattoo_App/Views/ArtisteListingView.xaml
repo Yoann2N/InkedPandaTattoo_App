@@ -42,6 +42,11 @@
 
             <TextBlock Text="Facebook"/>
             <TextBox Text="{Binding Facebook, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button Content="Enregistrer"
+                    Command="{Binding DataContext.SaveUserCommand, 
+                RelativeSource={RelativeSource AncestorType=Grid}}"
+                    Margin="0 20 0 0"/>
         </StackPanel>
 
 
