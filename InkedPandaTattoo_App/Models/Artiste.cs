@@ -39,6 +39,7 @@ namespace InkedPandaTattoo_App.Models
         [JsonPropertyName("css")]
         public string? Css { get; set; }
 
+        [JsonPropertyName("user_id")]
         public long UserId { get; set; }
 
         public Artiste() { }

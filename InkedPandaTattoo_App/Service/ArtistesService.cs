@@ -19,6 +19,7 @@ namespace InkedPandaTattoo_App.Service
             //_httpClient.BaseAddress = new Uri("http://127.0.0.1:8000/api/artistes/");
         }
 
+        
         public async Task<List<Artiste>> GetArtistes()
         {
             var response = await _httpClient.GetAsync("http://127.0.0.1:8000/api/artistes/");

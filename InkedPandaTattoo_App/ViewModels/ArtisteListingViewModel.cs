@@ -14,7 +14,12 @@ namespace InkedPandaTattoo_App.ViewModels
 
         public ObservableCollection<Artiste> Artistes { get; set; } = new ObservableCollection<Artiste>();
 
-        public Artiste? SelectedArtiste { get; set; }
+        private Artiste? _selectedArtiste;
+        public Artiste? SelectedArtiste 
+        {
+            get => _selectedArtiste; 
+            set { _selectedArtiste = value; OnPropertyChanged("SelectedArtiste"); }
+        }
         public ICommand LoadCommand { get; }
 
         public ICommand AddCommand { get; }
