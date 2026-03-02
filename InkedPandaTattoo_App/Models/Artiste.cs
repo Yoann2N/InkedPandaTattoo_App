@@ -12,35 +12,32 @@ namespace InkedPandaTattoo_App.Models
         [JsonPropertyName("id")]
         public long Id { get; }
 
-        [JsonPropertyName("Profession")]
+        [JsonPropertyName("profession")]
         public string Profession { get; set; } = string.Empty;
 
-        [JsonPropertyName("Style")]
+        [JsonPropertyName("style")]
         public string Style { get; set; } = string.Empty;
 
-        [JsonPropertyName("Pseudo")]
+        [JsonPropertyName("pseudo")]
         public string? Pseudo { get; set; }
 
-        [JsonPropertyName("Bio")]
+        [JsonPropertyName("bio")]
         public string? Bio { get; set; }
 
-        [JsonPropertyName("Instagram")]
+        [JsonPropertyName("instagram")]
         public string? Instagram { get; set; }
 
-        [JsonPropertyName("Facebook")]
+        [JsonPropertyName("facebook")]
         public string? Facebook { get; set; }
 
-        [JsonPropertyName("BanniereUrl")]
+        [JsonPropertyName("banniere_url")]
         public string? BanniereUrl { get; set; }
 
-        [JsonPropertyName("VignetteUrl")]
+        [JsonPropertyName("vignette_url")]
         public string? VignetteUrl { get; set; }
 
-        [JsonPropertyName("Css")]
+        [JsonPropertyName("css")]
         public string? Css { get; set; }
-
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-        public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
         public long UserId { get; set; }
 
